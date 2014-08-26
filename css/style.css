@@ -1,0 +1,2156 @@
+@font-face {
+	font-family: 'Conv_CaeciliaLTStd-Bold';
+	src: url('fonts/CaeciliaLTStd-Bold.eot');
+	src: local('☺'), url('fonts/CaeciliaLTStd-Bold.woff') format('woff'), url('fonts/CaeciliaLTStd-Bold.ttf') format('truetype'), url('fonts/CaeciliaLTStd-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_CaeciliaLTStd-Heavy';
+	src: url('fonts/CaeciliaLTStd-Heavy.eot');
+	src: local('☺'), url('fonts/CaeciliaLTStd-Heavy.woff') format('woff'), url('fonts/CaeciliaLTStd-Heavy.ttf') format('truetype'), url('fonts/CaeciliaLTStd-Heavy.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'Conv_CaeciliaLTStd-Roman';
+	src: url('fonts/CaeciliaLTStd-Roman.eot');
+	src: local('☺'), url('fonts/CaeciliaLTStd-Roman.woff') format('woff'), url('fonts/CaeciliaLTStd-Roman.ttf') format('truetype'), url('fonts/CaeciliaLTStd-Roman.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	vertical-align:baseline;
+	text-decoration: none;
+}
+
+html,body {
+
+	background-attachment:fixed;
+	width:100%;
+	height:100%;
+	font-family: 'Conv_CaeciliaLTStd-Roman';
+}
+
+
+h1 {
+	color: #00b2ab;
+	background: url(../img/border-bottom.png) bottom no-repeat;
+	width: 96%;
+	padding-bottom: 10px;
+	text-align: center;
+	font-family: 'Conv_CaeciliaLTStd-Bold';
+	font-size: 2.6em;
+	margin-bottom: 20px;
+}
+
+p {
+	color: #58595b;
+	font-family: 'Conv_CaeciliaLTStd-Roman';
+}
+
+b {
+	font-family: 'Conv_CaeciliaLTStd-Bold';
+}
+
+.logo{
+	display: block;
+	margin:11.250em auto;
+}
+
+
+
+nav { 
+	text-align: center;
+	box-shadow: 1px 1px 5px #cccccc; 
+	background: #ffffff;
+	height: auto;
+	width: 100%;
+	top: 27.6em;
+	position: absolute;
+}
+nav ul { list-style: none; padding: 0px; margin: 0px; }
+nav li {
+	display: inline-block;
+}
+nav a {
+	display: block; text-decoration: none; color: #444; transition: 0.4s ease background; padding: 10px ; 
+}
+
+nav a:hover , nav a:active ,  nav a.active {  
+	background-color: #00b2ab;
+	color: #ffffff;
+} 
+nav a#pull {
+	display: none;
+}
+
+
+h1 {
+	color:#00b2ab;
+	text-align:center;	
+}
+
+#video_background {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width:100%;
+	min-height:100%;
+	max-height:4000%;
+	max-width:1000%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+
+	opacity: 0.3;
+}
+
+#video_pattern{
+	position: absolute; 
+	opacity: 0.5; 
+	left: 0px; 
+	top: 0px; 
+	width: 100%; 
+	height: 100%; 
+	z-index: 1;
+	background-image: url(../img/pattern.png); 
+}
+
+.email {
+	color: #000000;
+}
+
+.email:hover {
+	color: #ff6600;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrapper{
+	width:90%;
+	max-width: 1000px;
+	margin:0 auto;
+	position:relative;
+}
+
+.slideno{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	font-size:100px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.3);
+}
+.button1 , .up{
+	display:block;
+	width:50px;
+	height:30px;
+	position:absolute;
+	z-index: 100;
+	bottom:16px;
+	left:50%;
+	margin-left:-36px;
+	background:url(../img/arrow.png) no-repeat;
+	cursor: pointer;
+}
+
+.up {
+	background-position: 0 -30px;
+}
+
+
+.box-inside {
+			margin: auto;
+			width: 450px;
+			padding-top: 40px;
+				}
+
+	.box-inside p {
+		font-size: 15px;
+		line-height: 17px;
+		
+	}
+
+
+.teaser {
+	  margin:auto;
+	  position: absolute;
+	  top: -80px; left: 0; bottom: 0; right: 0;
+}
+
+
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1{
+	overflow:hidden;
+	
+}
+/******************************
+ SLIDE 2 - O que é
+*******************************/
+#slide2{
+	background: url(../img/bg-pattern.png) repeat;
+}
+
+
+#slide2 img:first-child{
+	position:absolute;
+	top: 150px;
+	left: -390px;
+}
+
+#slide2  img:nth-child(2){
+
+}
+
+#slide2  img:nth-child(3){
+	position:absolute;
+	top: 280px;
+	left: 410px;
+}
+
+#slide2  img:nth-child(4){
+	position:absolute;
+	top: 480px;
+	left: -40px;
+}
+
+
+
+
+
+
+/******************************
+ SLIDE 3 - area de atuacao
+*******************************/
+#slide3{
+	background: url(../img/bg-pattern.png) repeat;	
+}
+
+#slide3 .cloud1 ,
+#slide3 .cloud2 ,
+#slide3 .cloud3 ,
+#slide3 .cloud4 ,
+#slide3 .cloud5 ,
+#slide3 .cloud6 ,
+#slide3 .cloud7 ,
+#slide3 .cloud8 ,
+#slide3 .cloud9
+{
+	background: url(../img/slide3/cloud1-sem-texto.png) no-repeat;
+	width: 339px;
+	height: 250px;
+	position: absolute;
+	top: 520px;
+	left: -565px;
+	background-size: 90%;
+}
+
+#slide3 .cloud2 {
+	top: 180px;
+	left: -130px;
+	background-size: 100%;
+}
+
+#slide3 .cloud3 {
+	top: 365px;
+	left: -70px;
+}
+
+#slide3 .cloud4 {
+	top: 265px;
+	left: 10px;
+}
+
+#slide3 .cloud5 {
+	top: 520px;
+	left: -20px;
+}
+
+#slide3 .cloud6 {
+	top: 220px;
+	left: 240px;
+}
+
+#slide3 .cloud7 {
+	top: 385px;
+	left: 10px;
+}
+
+#slide3 .cloud8 {
+	top: 540px;
+	left: 170px;
+}
+
+#slide3 .cloud9 {
+	top: 355px;
+	left: 280px;
+}
+
+		#slide3 .cloud1 p,
+		#slide3 .cloud2 p,
+		#slide3 .cloud3 p,
+		#slide3 .cloud4 p,
+		#slide3 .cloud5 p,
+		#slide3 .cloud6 p,
+		#slide3 .cloud7 p,
+		#slide3 .cloud8 p,
+		#slide3 .cloud9 p
+		 {
+			width: 216px;
+			height: 99px;
+			margin: 80px 0 0 72px;
+			text-align: center;
+			line-height: 18px;
+			font-size: 0.875em;
+		}
+
+		#slide3 .cloud1 p {
+			margin-left: 55px;
+		}
+
+		#slide3 .cloud3 p {
+			width: 153px;
+		}
+
+		#slide3 .cloud4 p {
+			width: 147px;
+		}
+
+		#slide3 .cloud5 p {
+			width: 127px;
+			margin-left: 85px;
+		}
+
+		#slide3 .cloud7 p {
+			margin-left: 50px;
+		}
+
+		#slide3 .cloud6 p {
+			width: 186px;
+		}
+
+		#slide3 .cloud9 p , #slide3 .cloud8 p{
+			width: 147px;
+		}
+
+		#slide3 .cloud1 p b ,
+		#slide3 .cloud2 p b ,
+		#slide3 .cloud3 p b ,
+		#slide3 .cloud4 p b ,
+		#slide3 .cloud5 p b ,
+		#slide3 .cloud6 p b ,
+		#slide3 .cloud7 p b ,
+		#slide3 .cloud8 p b ,
+		#slide3 .cloud9 p b 
+		{
+			font-family: 'Conv_CaeciliaLTStd-Heavy';
+		}
+
+
+
+/* item 1 */
+#slide3 img:first-child{
+	position:absolute;
+	top: 80px;
+	left: -100px;
+}
+
+#slide3  img:nth-child(2){
+
+}
+/* item 2 */
+#slide3  img:nth-child(3){
+	position:absolute;
+	top: 450px;
+	left: 115px;
+}
+/* item 3 */
+#slide3  img:nth-child(4){
+	position:absolute;
+	top: 20px;
+	left: 720px;
+}
+/* item 4 */
+#slide3  img:nth-child(5){
+	position:absolute;
+	top: 400px;
+	left: 680px;
+}
+
+#slide3 .aux-text {
+	margin-top: 34em;
+	width: 373px;
+	text-align: center;
+}
+
+/******************************
+ SLIDE 4 - Estrutura
+*******************************/
+
+#slide4{
+	background: url(../img/bg-pattern.png) repeat;	
+}
+
+#slide4 .box-ct-projetos , 
+#slide4 .box-ct-decisoria ,
+#slide4 .box-ct-fiscal ,
+#slide4 .box-ct-especialista
+{
+	width: 280px;
+	position: absolute;
+	top: 220px;
+	left: -20px;
+}
+
+#slide4 .box-ct-decisoria {
+	top: 430px;
+	left: 50px;
+}
+
+#slide4 .box-ct-fiscal {
+	top: 160px;
+	left: 650px;
+}
+
+#slide4 .box-ct-especialista {
+	top: 390px;
+	left: 730px;
+}
+
+#slide4 .box-ct-projetos > h4 , 
+#slide4 .box-ct-decisoria > h4 ,  
+#slide4 .box-ct-fiscal > h4 ,  
+#slide4 .box-ct-especialista > h4 , 
+#slide4 .box-ct-projetos > p , 
+#slide4 .box-ct-decisoria > p 
+{
+	text-align: right;
+	color: #58595b;
+}
+
+
+#slide4 .box-ct-projetos > h4 ,
+#slide4 .box-ct-decisoria > h4 ,
+#slide4 .box-ct-fiscal > h4 ,
+#slide4 .box-ct-especialista > h4 
+ {
+	margin-bottom: 0px;
+	font-size: 16px;
+	font-family: 'Conv_CaeciliaLTStd-Bold';
+}
+
+#slide4 .box-ct-fiscal > h4 ,
+#slide4 .box-ct-especialista > h4 
+ {
+	text-align: left;
+}
+
+#slide4 .box-ct-projetos > p , 
+#slide4 .box-ct-decisoria > p ,
+#slide4 .box-ct-fiscal > p ,
+#slide4 .box-ct-especialista > p 
+{
+	line-height: 20px;
+	font-size: 13px;
+	margin-top: 10px;
+	
+}
+
+/* item 1 */
+#slide4 img:first-child{
+	position:absolute;
+	top: 420px;
+	left: -210px;
+}
+
+#slide4  img:nth-child(2){
+	position:absolute;
+	top: 270px;
+	left: -35px;
+}
+/* item 2 */
+#slide4  img:nth-child(3){
+	position:absolute;
+	top: 450px;
+	left: 115px;
+}
+/* item 3 */
+#slide4  img:nth-child(4){
+	position:absolute;
+	top: 20px;
+	left: 720px;
+}
+/* item 4 */
+#slide4  img:nth-child(5){
+	position:absolute;
+	top: 400px;
+	left: 680px;
+}
+
+/* cloud 3 */
+#slide4  img:nth-child(8){
+	position:absolute;
+	top: -35px;
+	left: 420px;
+}
+
+
+/******************************
+ SLIDE 5 - Como funciona
+*******************************/
+
+#slide5{
+	background: url(../img/bg-pattern.png) repeat;
+}
+
+#slide5 .slider{margin:auto; padding:20px; width:100%; height: auto;}
+#slide5.slider:after, #slide5 .buttons::after{clear:both;content:"";display:table;}
+#slide5 ul.nav{margin-bottom:0;padding-left:0;text-align:center;}
+#slide5 ul.nav li{display:inline-block;list-style-type:none;margin:auto;}
+#slide5 ul.nav li a{text-decoration:none;}
+
+
+#slide5 .step {
+	display: table;
+	margin-top: 40px;
+}
+
+#slide5 div.esquema img {
+	margin: auto;
+}
+
+#slide5 .line {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#slide5 .step img  {
+	float: left;
+	margin-right: 40px;
+
+}
+
+#slide5 .step p {
+	width: 90%;
+	font-size: 1.225em;
+}
+
+
+.step1-img ,
+.step2-img ,
+.step3-img ,
+.step4-7-img ,
+.step5-8-img ,
+.step6-img ,
+.step9-img ,
+.step10-img ,
+.step11-img 
+{
+	float: left;
+	margin-right: 40px;
+}
+
+.step1-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat 0 0;
+	width: 303px;
+	height: 300px;
+}
+
+.step2-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat -317px 0;
+	width: 300px;
+	height: 297px;
+}
+
+.step3-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat -626px 0;
+	width: 300px;
+	height: 297px;
+}
+
+.step4-7-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat 0 -312px;
+	width: 300px;
+	height: 360px;
+}
+
+.step5-8-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat -302px -312px;
+	width: 302px;
+	height: 360px;
+}
+
+.step6-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat -622px -312px;
+	width: 305px;
+	height: 290px;
+}
+
+.step7-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat 0 -690px;
+	width: 300px;
+	height: 360px;
+}
+
+.step8-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat -309px -698px;
+	width: 305px;
+	height: 300px;
+}
+
+.step9-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat -642px -672px;
+	width: 298px;
+	height: 297px;
+}
+
+.step10-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat -320px -1073px;
+	width: 300px;
+	height: 297px;
+}
+
+.step11-img {
+	background: url('../img/slide5/sprite-como-funciona.png') no-repeat -639px -1074px;
+	width: 300px;
+	height: 300px;
+}
+
+
+
+
+
+
+
+
+
+/******************************
+ SLIDE 6 - Vídeos
+*******************************/
+
+#slide6 {
+	background: url(../img/bg-pattern.png) repeat;	
+}
+
+#slide6 .content{margin:auto;padding:30px;width:90%;}
+#slide6 .content:after, #slide6 .buttons::after{clear:both;content:"";display:table;}
+
+#slide6 .slick-slider video {  
+   width:87%; 
+   height:auto; 
+   border: 10px solid #ffffff;
+}
+
+#slide6 ul.nav{margin-bottom:0;padding-left:0;text-align:center;}
+#slide6 ul.nav li{display:inline-block;list-style-type:none;margin:auto;}
+#slide6 ul.nav li a{font-size:12px;text-decoration:none;}
+
+
+
+
+p.compartilhe {
+	font-family: 'Conv_CaeciliaLTStd-Heavy';
+	color: #58595b;
+	text-align: center;
+	margin-top: 3em; 
+	height: 10px;
+	line-height: 10px;
+	text-indent: -20px;
+}
+
+
+/******************************
+ SOCIAL SHARE
+*******************************/
+
+#social {
+	width: 174px;
+	margin: -50px auto;
+}
+
+
+
+button {
+	border:0px;
+}
+
+.like-block {
+                width: 80px;
+                height: 90px;
+                display: inline-block;
+            }
+
+            .like-block-only-button {
+                width: 130px;
+                height: 40px;
+                display: inline-block;
+            }
+
+            .like-button {
+                height: 73px;
+                width: 68px;
+                cursor:pointer; 
+            }
+
+
+            .like-counter {
+                height: 30px;
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            .text, .source-link {
+                margin-bottom: 10px;
+            }
+
+            .small-font {
+                font-size:0.7em;
+            }
+			.s_facebook {
+				background:url(../img/slide6/facebook.jpg) no-repeat;
+			}
+			
+			.s_twitter {
+				background:url(../img/slide6/twitter.jpg) no-repeat;
+			}
+
+/******************************
+ SLIDE 7 - De uma ideia
+*******************************/
+#slide7{
+	background: url(../img/bg-pattern.png) repeat;		
+}
+
+#slide7 img:first-child{
+	
+}
+/* cloud2 */
+#slide7  img:nth-child(2){
+	position:absolute;
+	visibility: hidden;
+}
+/* item 2 */
+#slide7  img:nth-child(3){
+	position:absolute;
+	visibility: hidden;
+}
+/* item 3 */
+#slide7  img:nth-child(4){
+	position:absolute;
+	visibility: hidden;
+}
+
+#slide7  .links {
+	margin: auto;
+	width: 250px;
+}
+
+#slide7  .links a {
+	margin-right: 10px;
+}
+
+#slide7  .bg {
+	background: url(../img/slide7/bg-slide7.png) no-repeat;
+			-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 1200px;
+	height: 795px;
+	margin: auto;
+}
+
+#slide7 .wrapper {
+	margin-top: -800px;
+}
+
+/******************************
+ SLIDE 8 - Equipe
+*******************************/
+
+#slide8 {
+	background: url(../img/bg-pattern.png) repeat;	
+}
+
+#slide8 h3 {
+	text-align: center;
+}
+
+.team {
+	list-style: none;
+	width: 100%;
+	margin: auto;
+}
+
+.team li {
+	float: left;
+	font-size: 0.805em;
+
+	margin-bottom: 15px;
+	width: 33%;
+}
+
+.team li a {
+	float: left;
+}
+
+.team li p {
+	margin-left: 9.425em;
+	margin-top: 2.675em;
+}
+
+.team li p b {
+	font-weight: bold;
+	font-family: 'Conv_CaeciliaLTStd-Bold';
+}
+
+
+/* Circle Avatar Styles */
+
+.circle {
+	line-height: 0;		/* remove line-height */ 
+	display: inline-block;	/* circle wraps image */
+	margin: 5px;
+  	border: 4px solid rgba(255,255,255,0.4);
+	border-radius: 50%;	/* relative value */
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	transition: linear 0.25s;
+	height: 103px;
+	width: 101px;
+	visibility: hidden;
+}
+
+.circle img {
+	border-radius: 50%;	/* relative value for
+				   adjustable image size */
+	  height: 103px;
+	  width: 101px;
+
+}
+
+.circle:hover {
+	border: 4px solid #00b4ac; 
+	transform: rotate(2.5deg);
+}
+a.circle {
+  color: transparent;
+} /* IE fix: removes blue border */	
+
+
+
+
+/******************************
+ SLIDE 9 - Créditos
+*******************************/
+
+#slide9 {
+	background: url(../img/bg-pattern.png) repeat;
+}
+
+#slide9 h4 {
+	text-transform: uppercase;
+	padding: 0 0px 10px 0px;
+	border-bottom: 1px dotted #333333;
+	display: inline-block;
+	width: auto;
+}
+
+#slide9 .colum1 , #slide9 .colum2 {
+	width: 63%;
+	height: auto;
+	float: left;
+	margin: auto;
+	position: relative;
+}
+
+#slide9 .colum2 {
+	width: 30%;
+	margin-left: 40px;
+
+}
+
+#slide9 .aux {
+	width: 90%;
+	margin-left: auto;
+	height: auto;
+}
+
+
+#slide9 p {
+	margin-bottom: 21px;
+	margin-top: 0px;
+	line-height: 21px;
+	font-size: 14px;
+	color: #666666;
+}
+
+#slide9 p b {
+	color: #393c3c;
+}
+
+#slide9 .logomarcas {
+	list-style: none;
+	margin: 10px auto;
+	display: table;
+	clear: both;
+}
+
+#slide9 .logomarcas li {
+	float: left;
+	margin-right: 30px;
+	display: block;
+    height: 100px;
+    line-height: 100px;
+}
+
+#slide9 .logomarcas li img {
+	vertical-align: middle;
+}
+
+
+/******************************
+ SLIDE 10 - Novidades
+*******************************/
+
+#slide10 {
+	background: url(../img/bg-pattern.png) repeat;	
+}
+
+
+
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1441px) and  (max-width: 1824px ){
+
+		/* __________________________________________________________________ 
+			
+			O que é
+		__________________________________________________________________  */
+
+			#slide2 .box-inside {
+				padding-top: 25px;
+			}
+			#slide2 img:first-child{
+				position:absolute;
+				top: 140px;
+				left: -280px;
+			}
+
+			#slide2  img:nth-child(2){
+				position:absolute;
+				top: 150px;
+				left: 610px;
+			}
+
+			#slide2  img:nth-child(3){
+				position:absolute;
+				top: 240px;
+				left: 620px;
+			}
+
+		/* __________________________________________________________________ 
+			
+			Área de atuação
+		__________________________________________________________________  */
+
+
+		#slide3 .cloud1 {
+			top: 480px;
+			left: -245px;
+		}
+
+		#slide3 .cloud2 {
+			top: 130px;
+			left: -160px;
+		}
+
+		#slide3 .cloud3 {
+			top: 295px;
+			left: -10px;
+		}
+
+		#slide3 .cloud4 {
+			top: 215px;
+			left: 170px;
+		}
+
+		#slide3 .cloud5 {
+			top: 435px;
+			left: 170px;
+		}
+
+		#slide3 .cloud6 {
+			top: 180px;
+			left: 535px;
+		}
+
+		#slide3 .cloud7 {
+			top: 345px;
+			left: 335px;
+		}
+
+		#slide3 .cloud8 {
+			top: 480px;
+			left: 445px;
+		}
+
+		#slide3 .cloud9 {
+			top: 355px;
+			left: 635px;
+		}
+
+		#slide3 .aux-text {
+			visibility: hidden;
+		}
+
+		/* __________________________________________________________________ 
+			
+			Estrutura
+		__________________________________________________________________  */
+
+		/* item 1 */
+		#slide4 img:first-child{
+			position:absolute;
+			top: 420px;
+			left: -130px;
+		}
+
+		#slide4  img:nth-child(2){
+			position:absolute;
+			top: 270px;
+			left: 139px;
+		}
+		/* item 2 */
+		#slide4  img:nth-child(3){
+			position:absolute;
+			top: 450px;
+			left: 115px;
+		}
+
+		/* __________________________________________________________________ 
+			
+			vídeos
+		__________________________________________________________________  */
+
+
+		p.compartilhe {
+			margin-top: 0.2em; 
+
+		}
+		/* __________________________________________________________________ 
+			
+			Dê uma ideia
+		__________________________________________________________________  */
+
+		#slide7 {
+			overflow: hidden;
+		}
+
+
+		#slide7  img:nth-child(2){
+			position:absolute;
+			top: -275px;
+			left: 725px;
+		}
+		#slide7  img:nth-child(3){
+			position:absolute;
+			top: -793px;
+			left: 970px;
+		}
+		#slide7  img:nth-child(4){
+			position:absolute;
+			top: -870px;
+			left: 1689px;
+		}
+
+
+		/******************************
+		 SLIDE 9 - Créditos
+		*******************************/
+
+		#slide9 h4 {
+			padding-bottom: 0px;
+		}
+
+		#slide9 h1 {
+			font-size: 2.2em;
+		}
+
+		#slide9 .aux {
+			margin-top: -15px;
+		}
+
+
+		#slide9 p {
+			margin-bottom: 10px;
+			line-height: 18px;
+			font-size: 13px;
+		}
+
+
+
+}
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) and  (max-width: 1440px ){ 
+
+		/* __________________________________________________________________ 
+			
+			O que é
+		__________________________________________________________________  */
+			#slide2 img:first-child{
+				position:absolute;
+				top: 140px;
+				left: -280px;
+			}
+
+			#slide2  img:nth-child(2){
+				position:absolute;
+				top: 150px;
+				left: 610px;
+			}
+
+			#slide2  img:nth-child(3){
+				position:absolute;
+				top: 240px;
+				left: 620px;
+			}
+
+		/* __________________________________________________________________ 
+			
+			Área de atuação
+		__________________________________________________________________  */
+
+
+		#slide3 .cloud1 {
+			top: 480px;
+			left: -245px;
+		}
+
+		#slide3 .cloud2 {
+			top: 130px;
+			left: -160px;
+		}
+
+		#slide3 .cloud3 {
+			top: 295px;
+			left: -10px;
+		}
+
+		#slide3 .cloud4 {
+			top: 215px;
+			left: 170px;
+		}
+
+		#slide3 .cloud5 {
+			top: 435px;
+			left: 170px;
+		}
+
+		#slide3 .cloud6 {
+			top: 180px;
+			left: 535px;
+		}
+
+		#slide3 .cloud7 {
+			top: 345px;
+			left: 335px;
+		}
+
+		#slide3 .cloud8 {
+			top: 480px;
+			left: 445px;
+		}
+
+		#slide3 .cloud9 {
+			top: 355px;
+			left: 635px;
+		}
+
+		#slide3 .aux-text {
+			visibility: hidden;
+		}
+
+		/* __________________________________________________________________ 
+			
+			Estrutura
+		__________________________________________________________________  */
+
+		/* item 1 */
+		#slide4 img:first-child{
+			position:absolute;
+			top: 420px;
+			left: -130px;
+		}
+
+		#slide4  img:nth-child(2){
+			position:absolute;
+			top: 270px;
+			left: 126px;
+		}
+		/* item 2 */
+		#slide4  img:nth-child(3){
+			position:absolute;
+			top: 450px;
+			left: 115px;
+		}
+
+
+		/* __________________________________________________________________ 
+			
+			Como funciona
+		__________________________________________________________________  */
+
+		#slide5 div.esquema img {
+			width: 65%;
+			margin: auto;
+		}
+
+
+
+		/* __________________________________________________________________ 
+			
+			vídeos
+		__________________________________________________________________  */
+
+
+		p.compartilhe {
+			margin-top: 2em; 
+
+		}
+		/* __________________________________________________________________ 
+			
+			Dê uma ideia
+		__________________________________________________________________  */
+		
+		/* __________________________________________________________________ 
+			
+			Dê uma ideia
+		__________________________________________________________________  */
+
+		#slide7 {
+			overflow: hidden;
+		}
+
+
+		#slide7  img:nth-child(2){
+			position:absolute;
+			top: 175px;
+			left: 725px;
+		}
+		#slide7  img:nth-child(3){
+			position:absolute;
+			top: -263px;
+			left: 970px;
+		}
+		#slide7  img:nth-child(4){
+			position:absolute;
+			top: -270px;
+			left: 1689px;
+		}
+
+
+		/******************************
+		 SLIDE 9 - Créditos
+		*******************************/
+
+		#slide9 h4 {
+			padding-bottom: 0px;
+		}
+
+		#slide9 h1 {
+			font-size: 2em;
+		}
+
+		#slide9 .aux {
+			margin-top: -10px;
+		}
+
+
+		#slide9 p {
+			margin-bottom: 12px;
+			line-height: 19px;
+		}
+
+
+
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width : 768px)  {
+
+	.box-inside {
+			width: 60%;
+	}
+
+	#video_background , #video_pattern {
+		display: none;
+	}
+
+	.slick-prev, .slick-next {
+		top: 32%;
+	}
+
+	#slide6 .slick-slider video {  
+	   width:80%; 
+	}
+
+	#slide1 {
+		background: url(../img/bg-pattern.png) repeat;
+	}
+
+	nav { 
+  		height: auto;
+  	}
+  	nav ul {
+  		display: none;
+		height: auto;
+  	}
+  	nav li {
+  		width: 27%;
+  		float: left;
+  		position: relative;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #576979;
+		border-right: 1px solid #576979;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+  	nav a#pull {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('../img/nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 35px;
+		top: 10px;
+	}
+
+
+
+	/* __________________________________________________________________ 
+			
+			O que é
+		__________________________________________________________________  */
+
+			#slide2 img:first-child{
+				position:absolute;
+				top: 200px;
+				left: -200px;
+				width: 300px
+			}
+
+			#slide2  img:nth-child(2){
+				position:absolute;
+				top: 150px;
+				left: 550px;
+			}
+
+			#slide2  img:nth-child(3){
+				position:absolute;
+				top: 380px;
+				left: 460px;
+			}
+
+			#slide2  img:nth-child(4){
+				left: -120px;
+			}
+
+	/* __________________________________________________________________ 
+			
+			Áreas de atuação
+		__________________________________________________________________  */
+
+		#slide3 .cloud1 {
+			top: 590px;
+			left: -135px;
+		}
+
+		#slide3 .cloud2 {
+			top: 280px;
+			left: -120px;
+		}
+
+		#slide3 .cloud3 {
+			top: 445px;
+			left: -50px;
+		}
+
+		#slide3 .cloud4 {
+			top: 275px;
+			left: 140px;
+		}
+
+		#slide3 .cloud5 {
+			top: 620px;
+			left: 130px;
+		}
+
+		#slide3 .cloud6 {
+			top: 210px;
+			left: 405px;
+		}
+
+		#slide3 .cloud7 {
+			top: 435px;
+			left: 185px;
+		}
+
+		#slide3 .cloud8 {
+			top: 550px;
+			left: 345px;
+		}
+
+		#slide3 .cloud9 {
+			top: 365px;
+			left: 435px;
+		}
+
+		#slide3  img:nth-child(2) ,
+		#slide3  img:nth-child(3) ,
+		#slide3  img:nth-child(4)
+		{
+			visibility: hidden;
+		}
+		#slide3  img:nth-child(5){
+			left: 480px;
+		}
+
+		#slide3 .aux-text {
+			margin-top: 39em;
+		}
+
+
+
+		/* __________________________________________________________________ 
+			
+			Estrutura
+		__________________________________________________________________  */
+
+		#slide4 .box-ct-projetos ,
+		#slide4 .box-ct-decisoria ,
+		#slide4 .box-ct-fiscal ,
+		#slide4 .box-ct-especialista
+		 {
+			top: 220px;
+			left:20px;
+			
+		}
+
+		#slide4 .box-ct-projetos > h4 ,
+		#slide4 .box-ct-decisoria > h4 ,
+		#slide4 .box-ct-fiscal > h4 ,
+		#slide4 .box-ct-especialista > h4 ,
+		#slide4 .box-ct-projetos > p , 
+		#slide4 .box-ct-decisoria > p ,
+		#slide4 .box-ct-fiscal > p ,
+		#slide4 .box-ct-especialista > p 
+		 {
+			text-align: center;
+		}
+
+		#slide4 .box-ct-decisoria {
+			top: 190px;
+			left:370px;
+		}
+
+		#slide4 .box-ct-fiscal {
+			top: 500px;
+		}
+
+		#slide4 .box-ct-especialista {
+			top:500px;
+			left:370px;
+		}
+
+
+		#slide4  img:nth-child(2) ,
+		#slide4 img:first-child
+		{
+			visibility:hidden;
+		}
+
+		#slide4  img:nth-child(8)
+		{
+
+		}
+
+		/* __________________________________________________________________ 
+			
+			Como funciona
+		__________________________________________________________________  */
+
+		#slide5 div.esquema img {
+			width: 100%;
+			height: auto;
+			margin: -10px auto;
+		}
+
+
+		/******************************
+		 SLIDE 7 - De uma ideia
+		*******************************/
+
+		/* cloud2 */
+		#slide7  img:nth-child(2){
+			top: 375px;
+			left: 400px;
+			visibility: visible;
+		}
+		/* item 2 */
+		#slide7  img:nth-child(3){
+			visibility:hidden;
+		}
+		/* item 3 */
+		#slide7  img:nth-child(4){
+			visibility:hidden;
+		}
+
+
+
+		#slide7 .bg {
+			display: none;
+		}
+
+		#slide7 .wrapper {
+			margin-top: 0px;
+		}
+
+		/******************************
+		 SLIDE 8
+		*******************************/
+
+
+		.team li {
+			float: left;
+			font-size: 0.805em;
+			margin-right: 5px;
+			width: 47%;
+		}
+
+		.team li p {
+			margin-left: 110px;
+		}
+
+		/******************************
+		 SLIDE 9 - Créditos
+		*******************************/
+
+		#slide9 .aux {
+			margin: auto;
+			width: 100%;
+		}
+
+		#slide9 .colum1 {
+			width: 53%;
+		}
+
+		#slide9 .colum2 {
+			width: 40%;
+		}
+
+
+		#slide9 .logomarcas li {
+			margin-right: 10px;
+		}
+
+		#slide9 .logomarcas li img {
+			max-width: 131px;
+		}
+
+
+
+
+
+
+}
+
+
+
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)  {
+
+	.box-inside {
+			width: 60%;
+	}
+
+	#video_background , #video_pattern {
+		display: none;
+	}
+
+	#slide6 .slick-slider video {  
+	   width:80%; 
+	}
+
+	#slide1 {
+		background: url(../img/bg-pattern.png) repeat;
+	}
+
+	nav { 
+  		height: auto;
+  	}
+  	nav ul {
+  		display: none;
+		height: auto;
+  	}
+  	nav li {
+  		width: 25%;
+  		float: left;
+  		position: relative;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #576979;
+		border-right: 1px solid #576979;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+  	nav a#pull {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('../img/nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 35px;
+		top: 10px;
+	}
+
+
+
+
+
+	/* __________________________________________________________________ 
+			
+			O que é
+		__________________________________________________________________  */
+
+			#slide2 img:first-child{
+				position:absolute;
+				top: 200px;
+				left: -200px;
+				width: 300px
+			}
+
+			#slide2  img:nth-child(2){
+				position:absolute;
+				top: 150px;
+				left: 550px;
+			}
+
+			#slide2  img:nth-child(3){
+				position:absolute;
+				top: 380px;
+				left: 460px;
+			}
+
+			#slide2  img:nth-child(4){
+				left: -120px;
+			}
+
+	/* __________________________________________________________________ 
+			
+			Áreas de atuação
+		__________________________________________________________________  */
+
+		#slide3 .cloud1 {
+			top: 590px;
+			left: -135px;
+		}
+
+		#slide3 .cloud2 {
+			top: 280px;
+			left: -120px;
+		}
+
+		#slide3 .cloud3 {
+			top: 445px;
+			left: -50px;
+		}
+
+		#slide3 .cloud4 {
+			top: 275px;
+			left: 140px;
+		}
+
+		#slide3 .cloud5 {
+			top: 620px;
+			left: 130px;
+		}
+
+		#slide3 .cloud6 {
+			top: 210px;
+			left: 405px;
+		}
+
+		#slide3 .cloud7 {
+			top: 435px;
+			left: 185px;
+		}
+
+		#slide3 .cloud8 {
+			top: 550px;
+			left: 345px;
+		}
+
+		#slide3 .cloud9 {
+			top: 365px;
+			left: 435px;
+		}
+
+		#slide3  img:nth-child(2) ,
+		#slide3  img:nth-child(3) ,
+		#slide3  img:nth-child(4)
+		{
+			visibility: hidden;
+		}
+		#slide3  img:nth-child(5){
+			left: 480px;
+		}
+
+		#slide3 .aux-text {
+			margin-top: 39em;
+		}
+
+
+
+		/* __________________________________________________________________ 
+			
+			Estrutura
+		__________________________________________________________________  */
+
+		#slide4 .box-ct-projetos ,
+		#slide4 .box-ct-decisoria ,
+		#slide4 .box-ct-fiscal ,
+		#slide4 .box-ct-especialista
+		 {
+			top: 220px;
+			left:20px;
+			
+		}
+
+		#slide4 .box-ct-projetos > h4 ,
+		#slide4 .box-ct-decisoria > h4 ,
+		#slide4 .box-ct-fiscal > h4 ,
+		#slide4 .box-ct-especialista > h4 ,
+		#slide4 .box-ct-projetos > p , 
+		#slide4 .box-ct-decisoria > p ,
+		#slide4 .box-ct-fiscal > p ,
+		#slide4 .box-ct-especialista > p 
+		 {
+			text-align: center;
+		}
+
+		#slide4 .box-ct-decisoria {
+			top: 190px;
+			left:370px;
+		}
+
+		#slide4 .box-ct-fiscal {
+			top: 500px;
+		}
+
+		#slide4 .box-ct-especialista {
+			top:500px;
+			left:370px;
+		}
+
+
+		#slide4  img:nth-child(2) ,
+		#slide4 img:first-child
+		{
+			visibility:hidden;
+		}
+
+			#slide4  img:nth-child(8)
+			{
+
+			}
+
+		/* __________________________________________________________________ 
+			
+			Como funciona
+		__________________________________________________________________  */
+
+		#slide5 div.esquema img {
+			width: 100%;
+			height: auto;
+			margin: auto;
+		}
+
+
+		/******************************
+		 SLIDE 7 - De uma ideia
+		*******************************/
+
+		/* cloud2 */
+		#slide7  img:nth-child(2){
+			top: 375px;
+			left: 400px;
+			visibility: visible;
+		}
+		/* item 2 */
+		#slide7  img:nth-child(3){
+			visibility:hidden;
+		}
+		/* item 3 */
+		#slide7  img:nth-child(4){
+			visibility:hidden;
+		}
+
+
+
+		#slide7 .bg {
+			display: none;
+		}
+
+		#slide7 .wrapper {
+			margin-top: 0px;
+		}
+
+		/******************************
+		 SLIDE 8
+		*******************************/
+
+
+		.team li {
+			float: left;
+			font-size: 0.805em;
+			margin-right: 5px;
+			width: 47%;
+		}
+
+		.team li p {
+			margin-left: 110px;
+		}
+
+		/******************************
+		 SLIDE 9 - Créditos
+		*******************************/
+
+		#slide9 .aux {
+			margin: auto;
+			width: 100%;
+		}
+
+		#slide9 .colum1 {
+			width: 53%;
+		}
+
+		#slide9 .colum2 {
+			width: 40%;
+		}
+
+
+		#slide9 .logomarcas li {
+			margin-right: 10px;
+		}
+
+		#slide9 .logomarcas li img {
+			max-width: 131px;
+		}
+
+
+
+
+
+
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)  {
+
+	.box-inside {
+			width: 70%;
+			padding-top: 30px;
+	}
+
+	#video_background , #video_pattern {
+		display: none;
+	}
+
+	#slide6 .slick-slider video {  
+	   width:76%; 
+	}
+
+	#slide1 {
+		background: url(../img/bg-pattern.png) repeat;
+	}
+
+
+
+	/* __________________________________________________________________ 
+			
+			O que é
+		__________________________________________________________________  */
+
+
+
+			#slide2 img:first-child{
+				position:absolute;
+				top: 200px;
+				left: -170px;
+				width: 300px
+			}
+
+			#slide2  img:nth-child(2){
+				position:absolute;
+				top: 150px;
+				left: 760px;
+			}
+
+			#slide2  img:nth-child(3){
+				position:absolute;
+				top: 280px;
+				left: 700px;
+				width: 240px;
+			}
+
+	/* __________________________________________________________________ 
+			
+			Áreas de atuação
+		__________________________________________________________________  */
+
+		#slide3 .cloud1 {
+			top: 480px;
+			left: -195px;
+		}
+
+		#slide3 .cloud2 {
+			top: 155px;
+			left: -140px;
+		}
+
+		#slide3 .cloud3 {
+			top: 335px;
+			left: -20px;
+		}
+
+		#slide3 .cloud4 {
+			top: 187px;
+			left: 180px;
+		}
+
+		#slide3 .cloud5 {
+			top: 375px;
+			left: 220px;
+		}
+
+		#slide3 .cloud6 {
+			top: 155px;
+			left: 640px;
+		}
+
+		#slide3 .cloud7 {
+			top: 285px;
+			left: 390px;
+		}
+
+		#slide3 .cloud8 {
+			top: 480px;
+			left: 530px;
+		}
+
+		#slide3 .cloud9 {
+			top: 355px;
+			left: 650px;
+		}
+
+		#slide3 .aux-text {
+			margin:25em auto;
+		}
+
+		#slide3  img:nth-child(3),
+		#slide3 img:nth-child(5)
+		{
+			visibility:hidden;
+		}
+
+		/* __________________________________________________________________ 
+			
+			Estrutura
+		__________________________________________________________________  */
+
+		#slide4 .box-ct-especialista {
+			top: 390px;
+			left: 690px;
+		}
+
+
+		#slide4  img:nth-child(8),
+		#slide4 img:first-child
+		{
+			visibility:hidden;
+		}
+
+		
+		#slide4  img:nth-child(2) {
+			top: 270px;
+			left: 195px;
+			width: 52%;
+		}
+
+		#slide4 .box-inside p {
+			text-align: center;
+		}
+
+
+		/* __________________________________________________________________ 
+			
+			Como funciona
+		__________________________________________________________________  */
+
+		#slide5 div.esquema img {
+			width: 70%;
+			height: auto;
+		}
+
+
+
+		
+		/* __________________________________________________________________ 
+			
+			vídeos
+		__________________________________________________________________  */
+
+
+		p.compartilhe {
+			margin-top: 1.3em; 
+
+		}
+
+
+
+		/******************************
+		 SLIDE 7 - De uma ideia
+		*******************************/
+
+		#slide7 {
+			
+		}
+
+		/* cloud2 */
+		#slide7  img:nth-child(2){
+			top: 375px;
+			left: 420px;
+			visibility: visible;
+		}
+		/* item 2 */
+		#slide7  img:nth-child(3){
+			visibility:hidden;
+		}
+		/* item 3 */
+		#slide7  img:nth-child(4){
+			top: 25px;
+			left: 820px;
+			visibility: visible;
+		}
+
+		#slide7 .bg {
+			display: none;
+		}
+
+		#slide7 .wrapper {
+			margin-top: 10px;
+		}
+
+		/******************************
+		 SLIDE 9 - Créditos
+		*******************************/
+
+		#slide9 h4 {
+			padding-bottom: 0px;
+			font-size: 0.8em;
+		}
+		
+		#slide9 h1 {
+			font-size: 1.9em;
+		}
+
+		#slide9 .aux {
+			margin-top: -5px;
+			width: 100%;
+		}
+
+
+		#slide9 p {
+			margin-bottom: 18px;
+			line-height: 18px;
+			font-size: 0.8em;
+		}
+
+
+		#slide9 .logomarcas li {
+			float: left;
+			margin-right: 20px;
+			display: block;
+		    height: 100px;
+		    line-height: 100px;
+		}
+
+		#slide9 .logomarcas li img {
+			vertical-align: middle;
+		}
+
+}
+
+
+
+
+
+#inline { display: none; width: 750px; }
+
+
+#fb-root {
+    display: none;
+}
+
+/* To fill the container and nothing else */
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe {
+    width: 100% !important;
+}

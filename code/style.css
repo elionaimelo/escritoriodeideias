@@ -1,0 +1,142 @@
+/*custom font*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+	font-family: montserrat, arial, verdana;
+}
+
+* { margin: 0; padding: 0; outline: none; }
+html { font-size: 62.5%; height: 101%; }
+
+a { color: #3a51b2; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+p {
+	font-size: 14px;
+	margin: 10px;
+}
+h2 {
+	font-size: 22px;
+	border-bottom: 1px dotted #000000;
+	padding-bottom: 5px;
+	color: #00b2ab;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+form {
+	width: 90%;
+	margin: auto;
+}
+
+/*inputs*/
+input, textarea {
+	padding: 7px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	font-family: montserrat;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
+}
+
+.regular-checkbox {
+	display: none;
+}
+
+.regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	margin-bottom: -5px;
+	margin-right: 10px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+
+
+.coluna {
+	width: 40%;
+	margin:0 20px 20px 20px;
+	float: left;
+	line-height: 25px;
+}
+
+
+
+input.error, textarea.error { border-color: #973d3d; border-style: solid; background: #f0bebe; color: #a35959; }
+input.error:focus, textarea.error:focus { border-color: #973d3d; color: #a35959; }
+
+button#send {
+  display: inline-block;
+  margin: 0 10px 30px 0;
+  padding: 15px;
+  font-size: 15px;
+  font-family: "Bitter",serif;
+  line-height: 1;
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+button#send:focus {
+  outline: none
+}
+
+button#send {
+color: #fff;
+  background-color: #00b2ab;
+  border: none;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px #027f7a;
+  -moz-box-shadow: 0 10px #027f7a;
+  box-shadow: 0 10px #027f7a;
+}
+button#send:hover,
+button#send.hover {
+  background-color: #049c96;
+}
+button#send:active,
+button#send.active {
+   background-color: #00b2ab;
+  -webkit-box-shadow: 0 5px #027f7a;
+  -moz-box-shadow: 0 5px #027f7a;
+  box-shadow: 0 5px #027f7a;
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+  transform: translateY(5px);
+}

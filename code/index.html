@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>jQuery Modal Contact Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="stylesheet" type="text/css" media="all" href="style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	 
+
+    <form id="contact" name="contact" action="#" method="post">
+    	<h2>Cadastro de ideias</h2>
+        <input type="text" id="nome" name="nome" placeholder="Nome">
+        <br>
+        <input type="text" id="matricula" name="matricula" placeholder="Matrícula" />
+        <br>
+        <input type="text" id="setor" name="setor" placeholder="Setor de trabalho/curso" />
+        <br>
+        <input type="email" id="email" name="email" placeholder="Email" />
+        <br>
+        <input type="text" id="telefone" name="telefone" placeholder="Telefone" />
+        <br>
+
+        <h2>Informações sobre a ideia</h2>
+        <input type="text" id="titulo" name="titulo" placeholder="Título">
+        <br>
+        <p>Área(s) a que está relacionada</p>
+        <br>
+        <div class="coluna">
+        	<input type="checkbox" name="area[]" value="Administração institucional" class="regular-checkbox" id="checkbox-1-1" ><label for="checkbox-1-1"></label>Administração institucional<br>
+	        <input type="checkbox" name="area[]" value="Orçamento" class="regular-checkbox" id="checkbox-1-2"><label for="checkbox-1-2"></label>Orçamento<br>
+	        <input type="checkbox" name="area[]" value="Comunicação" class="regular-checkbox" id="checkbox-1-3"><label for="checkbox-1-3"></label>Comunicação<br>
+	        <input type="checkbox" name="area[]" value="Infraestrutura" class="regular-checkbox" id="checkbox-1-4"><label for="checkbox-1-4"></label>Infraestrutura<br>
+	        <input type="checkbox" name="area[]" value="Meio ambiente" class="regular-checkbox" id="checkbox-1-5"><label for="checkbox-1-5"></label>Meio Ambiente<br>
+        </div>
+        <div class="coluna">
+        	<input type="checkbox" name="area[]" value="Desenvolvimento Profissional" class="regular-checkbox" id="checkbox-1-6"><label for="checkbox-1-6"></label>Desenvolvimento Profissional<br>
+	        <input type="checkbox" name="area[]" value="Qualidade de vida" class="regular-checkbox" id="checkbox-1-7"><label for="checkbox-1-7"></label>Qualidade de vida<br>
+	        <input type="checkbox" name="area[]" value="Cultura" class="regular-checkbox" id="checkbox-1-8"><label for="checkbox-1-8"></label>Cultura<br>
+	        <input type="checkbox" name="area[]" value="Segurança" class="regular-checkbox" id="checkbox-1-9"><label for="checkbox-1-9"></label>Segurança<br>
+	        <input type="checkbox" name="area[]" value="Outra" class="regular-checkbox" id="checkbox-1-10"><label for="checkbox-1-10"></label>Outra(s)<br>
+        </div>
+        <br>
+        <textarea id="descricao" name="descricao" placeholder="Descreva aqui sua ideia" class="txtarea"></textarea>
+        <br>
+        <textarea id="resultados" name="resultados" placeholder="Quais resultados você acredita que sua ideia pode alcançar"  class="txtarea"></textarea>
+        
+        <button id="send">Cadastrar ideia</button>
+    </form>
+
+<!-- basic fancybox setup -->
+<script type="text/javascript">
+	function validateEmail(email) { 
+		var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return reg.test(email);
+	}
+
+	$(document).ready(function() {
+		$("#contact").submit(function() { return false; });
+
+		
+		$("#send").on("click", function(){
+			var emailval  = $("#email").val();
+			var msgval    = $("#descricao").val();
+			var msglen    = msgval.length;
+			var mailvalid = validateEmail(emailval);
+			
+			if(mailvalid == false) {
+				$("#email").addClass("error");
+			}
+			else if(mailvalid == true){
+				$("#email").removeClass("error");
+			}
+			
+			if(msglen < 4) {
+				$("#descricao").addClass("error");
+			}
+			else if(msglen >= 4){
+				$("#descricao").removeClass("error");
+			}
+			
+			if(mailvalid == true && msglen >= 4) {
+				// if both validate we attempt to send the e-mail
+				// first we hide the submit btn so the user doesnt click twice
+				$("#send").replaceWith("<em>enviando...</em>");
+				
+				$.ajax({
+					type: 'POST',
+					url: 'sendmessage.php',
+					data: $("#contact").serialize(),
+					success: function(data) {
+						if(data == "true") {
+							$("#contact").fadeOut("fast", function(){
+								$(this).before("<br><p style='font-size:16px;'><strong>Ideia cadastrada com sucesso. :)</strong></p>");
+								setTimeout("$.fancybox.close()", 1000);
+							});
+						}
+					}
+				});
+			}
+		});
+	});
+</script>
+
+</body>
+</html>
