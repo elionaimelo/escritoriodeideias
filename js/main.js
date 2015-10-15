@@ -20,21 +20,21 @@ jQuery(document).ready(function ($) {
         //cache the variable of the data-slide attribute associated with each slide
         dataslide = $(this).attr('data-slide');
 
-        //If the user scrolls up change the navigation link that has the same data-slide attribute as the slide to active and 
-        //remove the active class from the previous navigation link 
+        //If the user scrolls up change the navigation link that has the same data-slide attribute as the slide to active and
+        //remove the active class from the previous navigation link
         if (direction === 'down') {
             $('li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
         }
-        // else If the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and 
-        //remove the active class from the next navigation link 
+        // else If the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and
+        //remove the active class from the next navigation link
         else {
             $('li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
         }
 
     });
 
-    //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class 
-    //from navigation link slide 2 and adds it to navigation link slide 1. 
+    //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
+    //from navigation link slide 2 and adds it to navigation link slide 1.
     mywindow.scroll(function () {
         if (mywindow.scrollTop() == 0) {
             $('li[data-slide="1"]').addClass('active');
@@ -93,6 +93,7 @@ jQuery(document).ready(function ($) {
 $(document).ready(function(){
     $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
     $(".inline").colorbox({inline:true, width:"50%"});
+    $$(".group1").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
 });
 
 
@@ -104,7 +105,7 @@ $(document).ready(function(){
         image: 'http://escritoriodeideias.ufrn.br/img/logo.png',
         url: 'http://escritoriodeideias.ufrn.br/'
     });
-    
+
     $('.share1').ShareLink({
         title: 'Escritório de idéias',
         text: 'Confira os vídeos do escritório de idéias da UFRN',
@@ -112,7 +113,7 @@ $(document).ready(function(){
         url: 'http://escritoriodeideias.ufrn.br/'
     });
 
-     
+
 });
 
 
@@ -188,7 +189,7 @@ window.onorientationchange = function()
 
       $('.circle').each(function(){
           var imagePos = $(this).offset().top;
-          
+
           var topOfWindow = $(window).scrollTop();
             if (imagePos < topOfWindow+600) {
               $(this).addClass("fadeIn");
@@ -197,7 +198,7 @@ window.onorientationchange = function()
 });
 
 
-function validateEmail(email) { 
+function validateEmail(email) {
         var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return reg.test(email);
     }
@@ -206,32 +207,32 @@ function validateEmail(email) {
         $(".modalbox").fancybox();
         $("#contact").submit(function() { return false; });
 
-        
+
         $("#send").on("click", function(){
             var emailval  = $("#email").val();
             var msgval    = $("#msg").val();
             var msglen    = msgval.length;
             var mailvalid = validateEmail(emailval);
-            
+
             if(mailvalid == false) {
                 $("#email").addClass("error");
             }
             else if(mailvalid == true){
                 $("#email").removeClass("error");
             }
-            
+
             if(msglen < 4) {
                 $("#msg").addClass("error");
             }
             else if(msglen >= 4){
                 $("#msg").removeClass("error");
             }
-            
+
             if(mailvalid == true && msglen >= 4) {
                 // if both validate we attempt to send the e-mail
                 // first we hide the submit btn so the user doesnt click twice
                 $("#send").replaceWith("<em>sending...</em>");
-                
+
                 $.ajax({
                     type: 'POST',
                     url: 'sendmessage.php',
@@ -268,7 +269,7 @@ $(function() {
                     menu.slideToggle();
                 });
             }
-            
+
 
             $(window).resize(function(){
                 var w = $(window).width();
